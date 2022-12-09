@@ -58,45 +58,74 @@ body {
     font-family: var(--ff-body);
     font-weight: var(--weight-500);
     font-size: .9rem;
-    padding: 10%;
+    padding: 2%;
 }
 
 .div--card {
     background-color: var(--accent-white);
-    border-radius: 1rem;
+    border-radius: .5rem;
+    padding-bottom: 5%;
 }
 
 img {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
 }
 
 .div--product-class {
-    letter-spacing: .5rem;
-    padding: 2% 0 .5% 0;
+    letter-spacing: .3rem;
+    font-size: .6rem;
+    padding: 8% 0 2% 4%;
 }
 
 h1 {
     font-family: var(--ff-heading);
     font-weight: var(--weight-700);
+    padding-left: 4%;
+    padding-right: 20%; /* check this */
+    padding-bottom: 4%;
+    line-height: 2rem;
 }
 
 p {
     font-weight: var(--weight-500);
     font-family: var(--ff-body);
-    padding-bottom: 4%;
+    padding: 0 4% 4% 4%;
+    max-width: 34ch;
 }
 
 .div--price {
     font-family: var(--ff-heading);
     font-weight: var(--weight-700);
+    font-size: 2em;
     color: var(--primary-dark-cyan);
-    padding-bottom: 1%;
+    padding: 0 0 4% 4%;
+}
+
+.span--original-price {
+    color: black;
+    font-size: .8rem;
+    text-decoration: line-through;
+    padding-left: 1rem;
 }
 
 .button--cart {
+    font-weight: var(--weight-700);
     background-color: var(--primary-dark-cyan);
     color: var(--accent-white);
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
+    padding: .5rem 4rem;
+    border-radius: .5rem;
+    margin: 0 4% 10% 5%;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
 }
