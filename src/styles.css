@@ -42,89 +42,129 @@
   }
 
 :root {
-    --primary-dark-cyan: hsl(158, 36%, 37%);
-    --primary-cream: hsl(30, 38%, 92%);
-    --accent-very-dark-blue: hsl(212, 21%, 14%);
-    --accent-dark-grayish-blue: hsl(228, 12%, 48%);
-    --accent-white: hsl(0, 0%, 100%);
-    --ff-body: 'Montserrat';
-    --ff-heading: 'Fraunces'; 
-    --weight-500: 500;
-    --weight-700: 700;
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --accent-very-dark-blue: hsl(212, 21%, 14%);
+  --accent-dark-grayish-blue: hsl(228, 12%, 48%);
+  --accent-white: hsl(0, 0%, 100%);
+  --ff-body: 'Montserrat';
+  --ff-heading: 'Fraunces'; 
+  --weight-500: 500;
+  --weight-700: 700;
 }
 
 body {
-    background-color: var(--primary-cream);
-    font-family: var(--ff-body);
-    font-weight: var(--weight-500);
-    font-size: .9rem;
-    padding: 2%;
+  background-color: var(--primary-cream);
+  font-family: var(--ff-body);
+  font-weight: var(--weight-500);
+  font-size: .9rem;
+  padding: 2%;
 }
 
 .div--card {
-    background-color: var(--accent-white);
-    border-radius: .5rem;
-    padding-bottom: 10%;
+  background-color: var(--accent-white);
+  border-radius: .5rem;
+  padding-bottom: 10%;
 }
 
 img {
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
 }
 
 .div--product-class {
-    letter-spacing: .3rem;
-    font-size: .6rem;
-    padding: 8% 0 2% 4%;
+  letter-spacing: .3rem;
+  font-size: .6rem;
+  padding: 8% 0 2% 4%;
 } 
 
 h1 {
-    font-family: var(--ff-heading);
-    font-weight: var(--weight-700);
-    padding-left: 4%;
-    padding-bottom: 4%;
-    padding-right: 13%;
-    line-height: 2rem;
+  font-family: var(--ff-heading);
+  font-weight: var(--weight-700);
+  padding-left: 4%;
+  padding-bottom: 4%;
+  padding-right: 13%;
+  line-height: 2rem;
 }
 
 p {
-    font-weight: var(--weight-500);
-    font-family: var(--ff-body);
-    padding: 2% 10% 4% 4%;
+  font-weight: var(--weight-500);
+  font-family: var(--ff-body);
+  padding: 2% 10% 4% 4%;
 } 
 
 .div--price {
-    font-family: var(--ff-heading);
-    font-weight: var(--weight-700);
-    font-size: 2em;
-    color: var(--primary-dark-cyan);
-    padding: 0 0 10% 4%;
+  display: flex;
+  font-family: var(--ff-heading);
+  font-weight: var(--weight-700);
+  font-size: 2em;
+  color: var(--primary-dark-cyan);
+  padding: 0 0 .5% 4%;
 } 
 
 .span--original-price {
-    color: black;
-    font-size: .8rem;
-    text-decoration: line-through;
-    padding-left: 1rem;
+  color: hsl(0, 3%, 12%);
+  font-size: .8rem;
+  font-weight: var(--weight-500);
+  text-decoration: line-through;
+  padding-left: 1rem;
+  padding-top: .7rem;
 } 
-
+/* fix responsive sizing */
 .button--cart {
-    font-weight: var(--weight-700);
-    background-color: var(--primary-dark-cyan);
-    color: var(--accent-white);
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    padding: 1rem 7rem;
-    border-radius: .5rem;
-    margin: 4%;
+  font-weight: var(--weight-700);
+  background-color: var(--primary-dark-cyan);
+  color: var(--accent-white);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem 6rem;
+  border-radius: .5rem;
+  margin-inline: 4%;
 } 
+/* fix the vertical placement of icon */
+.img--shopping-cart {
+  display: inline-block;
+  padding-right: .5rem;
+  padding-top: 2rem;
+}
 
 .attribution { 
-    font-size: 11px;
-    text-align: center; 
+  font-size: 11px;
+  text-align: center; 
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+  color: hsl(228, 45%, 44%); 
 }
+
+@media (min-width: 650px) {
+  .div--card {
+    display: flex;
+    padding-bottom: 0;
+    margin-inline: 20%;/*check this*/
+  }
+
+  img {
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: 0;
+  }
+
+  section {
+    padding: 0;
+  }
+
+  h1 {
+  }
+
+  p {
+  }
+
+  .div--price {
+  }
+
+  .button--cart {
+  }
+
+}
+
