@@ -118,11 +118,16 @@ p {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  padding: 1rem 6rem;
+  /* padding: 1rem 6rem; */
+  padding: 4% 25%;
   border-radius: .5rem;
   margin-inline: 4%;
 } 
-/* fix the vertical placement of icon */
+
+.button--cart:hover {
+  background-color: hsl(158, 36%, 25%);
+}
+/* fix the vertical placement of icon , adjust svg? */
 .img--shopping-cart {
   display: inline-block;
   padding-right: .5rem;
@@ -138,11 +143,11 @@ p {
   color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 650px) {
+@media (min-width: 45rem) {
   .div--card {
     display: flex;
     padding-bottom: 0;
-    margin-inline: 20%;/*check this*/
+    margin-inline: 20%;
   }
 
   img {
@@ -152,18 +157,26 @@ p {
 
   section {
     padding: 0;
+    padding-top: 10%;
+    max-width: 45%;
   }
 
   h1 {
+    /* padding-right: 60%; */
+    padding-right: 40%;
   }
 
   p {
+    /* padding-right: 40%; */
   }
 
   .div--price {
+    margin: 0;
   }
 
   .button--cart {
+    padding: 1rem 4rem;
+    margin-bottom: 0;
   }
 
 }
