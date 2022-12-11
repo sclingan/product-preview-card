@@ -64,7 +64,7 @@ body {
 .div--card {
     background-color: var(--accent-white);
     border-radius: .5rem;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 img {
@@ -76,38 +76,37 @@ img {
     letter-spacing: .3rem;
     font-size: .6rem;
     padding: 8% 0 2% 4%;
-}
+} 
 
 h1 {
     font-family: var(--ff-heading);
     font-weight: var(--weight-700);
     padding-left: 4%;
-    padding-right: 20%; /* check this */
     padding-bottom: 4%;
+    padding-right: 13%;
     line-height: 2rem;
 }
 
 p {
     font-weight: var(--weight-500);
     font-family: var(--ff-body);
-    padding: 0 4% 4% 4%;
-    max-width: 34ch;
-}
+    padding: 2% 10% 4% 4%;
+} 
 
 .div--price {
     font-family: var(--ff-heading);
     font-weight: var(--weight-700);
     font-size: 2em;
     color: var(--primary-dark-cyan);
-    padding: 0 0 4% 4%;
-}
+    padding: 0 0 10% 4%;
+} 
 
 .span--original-price {
     color: black;
     font-size: .8rem;
     text-decoration: line-through;
     padding-left: 1rem;
-}
+} 
 
 .button--cart {
     font-weight: var(--weight-700);
@@ -116,10 +115,10 @@ p {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    padding: .5rem 4rem;
+    padding: 1rem 7rem;
     border-radius: .5rem;
-    margin: 0 4% 10% 5%;
-}
+    margin: 4%;
+} 
 
 .attribution { 
     font-size: 11px;
