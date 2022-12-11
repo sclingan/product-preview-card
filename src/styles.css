@@ -121,7 +121,7 @@ p {
   /* padding: 1rem 6rem; */
   padding: 4% 25%;
   border-radius: .5rem;
-  margin-inline: 4%;
+  margin-left: 4%;
 } 
 
 .button--cart:hover {
@@ -162,12 +162,11 @@ p {
   }
 
   h1 {
-    /* padding-right: 60%; */
-    padding-right: 40%;
+    padding-right: 50%;
   }
 
   p {
-    /* padding-right: 40%; */
+    padding-right: 32%;
   }
 
   .div--price {
@@ -175,7 +174,7 @@ p {
   }
 
   .button--cart {
-    padding: 1rem 4rem;
+    padding: 4% 16%;
     margin-bottom: 0;
   }
 
