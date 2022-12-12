@@ -1,3 +1,4 @@
+/* CSS Reset */
 /*  1. Use a more-intuitive box-sizing model. */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -70,7 +71,7 @@ body {
   overflow: hidden;
   max-width: 37.5rem;
 }
-
+/* Divide card into Image and Information Section */
 section {
   display: grid;
   gap: 1rem;
@@ -106,7 +107,7 @@ p {
   color: var(--primary-dark-cyan);
   align-items: center;
 } 
-
+/* For Screen Readers */
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -123,6 +124,7 @@ p {
   font-weight: var(--weight-500);
   padding-left: 1rem;
 } 
+
 .button--cart {
   display: inline-flex;
   justify-content: center;
@@ -137,18 +139,18 @@ p {
   padding: 0.75em 1.5em;
   gap: 0.5rem;
 } 
-
+/* Active State */
 .button--cart:hover {
   background-color: hsl(158, 36%, 25%);
 }
-
+/* Add Shopping Cart Icon */
 .button--cart::before {
   content: '';
   background-image: url('./assets/images/icon-cart.svg');
   height: 16px;
   width: 15px;
 }
-
+/* Styles Added by Frontend Mentor */
 .attribution { 
   padding-top: 10%;
   font-size: 11px;
@@ -158,7 +160,7 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%); 
 }
-
+/* Desktop Display Two Columns */
 @media (min-width: 46rem) {
   .div--card {
     grid-template-columns: 1fr 1fr;
@@ -167,7 +169,7 @@ p {
   .section {
     padding-inline: 2rem;
   }
-
+  /* Align Shopping Cart Icon */
   .button--cart {
     align-items: center;
   }
