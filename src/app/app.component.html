@@ -17,18 +17,23 @@
 <body>
     <main>
       <div class="div--card">
+        <!-- Images for mobile and Desktop -->
         <picture>
-          <source media="(min-width: 45rem)" srcset="../assets/images/image-product-desktop.jpg">
+          <source media="(min-width: 46rem)" srcset="../assets/images/image-product-desktop.jpg">
           <img src="../assets/images/image-product-mobile.jpg" alt="perfume bottle and leaves">
         </picture>
+        <!-- Information Section -->
        <section>
        <div class="div--product-class">PERFUME</div>
       <h1>Gabrielle Essence Eau De Parfum</h1>
       <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
          Perfumer-Creator for the House of CHANEL.</p>
-      <!-- fix the span class and icon for screen readers -->
-      <div class="div--price">$149.99 <span class="span--original-price">$169.99</span></div>
-      <a href="#" class="button--cart"><img src="../assets/images/icon-cart.svg" class="img--shopping-cart">Add to Cart</a>
+      <!-- Spans with visually-hidden for screen readers -->
+      <div class="div--price"><span class="visually-hidden">Current Price</span>$149.99<span class="visually-hidden">Original Price</span>
+        <div class="span--original-price"><s>$169.99</s></div>
+      </div>
+      <!-- Shopping Cart Button -->
+      <a href="#" class="button--cart">Add to Cart</a>
        </section>
       </div>
       <footer>

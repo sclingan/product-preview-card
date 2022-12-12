@@ -58,39 +58,44 @@ body {
   font-family: var(--ff-body);
   font-weight: var(--weight-500);
   font-size: .9rem;
-  padding: 2%;
+  display: grid;
+  place-content: center;
+  margin: 1rem;
 }
 
 .div--card {
+  display: grid;
   background-color: var(--accent-white);
   border-radius: .5rem;
-  padding-bottom: 10%;
+  overflow: hidden;
+  max-width: 37.5rem;
 }
 
-img {
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+section {
+  display: grid;
+  gap: 1rem;
+  padding: .75rem;
 }
 
 .div--product-class {
   letter-spacing: .3rem;
   font-size: .6rem;
-  padding: 8% 0 2% 4%;
+  color: var(--accent-dark-grayish-blue);
+  font-weight: var(--weight-500);
 } 
 
 h1 {
   font-family: var(--ff-heading);
   font-weight: var(--weight-700);
-  padding-left: 4%;
-  padding-bottom: 4%;
-  padding-right: 13%;
-  line-height: 2rem;
+  color: var(--accent-very-dark-blue);
+  font-size: 2rem;
+  line-height: 1.8rem;
 }
 
 p {
   font-weight: var(--weight-500);
   font-family: var(--ff-body);
-  padding: 2% 10% 4% 4%;
+  color: var(--accent-dark-grayish-blue);
 } 
 
 .div--price {
@@ -99,42 +104,53 @@ p {
   font-weight: var(--weight-700);
   font-size: 2em;
   color: var(--primary-dark-cyan);
-  padding: 0 0 .5% 4%;
+  align-items: center;
 } 
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
 .span--original-price {
   color: hsl(0, 3%, 12%);
   font-size: .8rem;
   font-weight: var(--weight-500);
-  text-decoration: line-through;
   padding-left: 1rem;
-  padding-top: .7rem;
 } 
-/* fix responsive sizing */
 .button--cart {
+  display: inline-flex;
+  justify-content: center;
   font-weight: var(--weight-700);
   background-color: var(--primary-dark-cyan);
   color: var(--accent-white);
   text-decoration: none;
+  border: none;
   text-align: center;
   cursor: pointer;
-  /* padding: 1rem 6rem; */
-  padding: 4% 25%;
   border-radius: .5rem;
-  margin-left: 4%;
+  padding: 0.75em 1.5em;
+  gap: 0.5rem;
 } 
 
 .button--cart:hover {
   background-color: hsl(158, 36%, 25%);
 }
-/* fix the vertical placement of icon , adjust svg? */
-.img--shopping-cart {
-  display: inline-block;
-  padding-right: .5rem;
-  padding-top: 2rem;
+
+.button--cart::before {
+  content: '';
+  background-image: url('./assets/images/icon-cart.svg');
+  height: 16px;
+  width: 15px;
 }
 
 .attribution { 
+  padding-top: 10%;
   font-size: 11px;
   text-align: center; 
 }
@@ -143,40 +159,17 @@ p {
   color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 46rem) {
   .div--card {
-    display: flex;
-    padding-bottom: 0;
-    margin-inline: 20%;
+    grid-template-columns: 1fr 1fr;
   }
 
-  img {
-    border-bottom-left-radius: .5rem;
-    border-top-right-radius: 0;
-  }
-
-  section {
-    padding: 0;
-    padding-top: 10%;
-    max-width: 45%;
-  }
-
-  h1 {
-    padding-right: 50%;
-  }
-
-  p {
-    padding-right: 32%;
-  }
-
-  .div--price {
-    margin: 0;
+  .section {
+    padding-inline: 2rem;
   }
 
   .button--cart {
-    padding: 4% 16%;
-    margin-bottom: 0;
+    align-items: center;
   }
-
 }
 
